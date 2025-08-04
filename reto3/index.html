@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas de multiplicar</title>
+    <link rel="icon" href="./assets/icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <img src="./assets/icono.png" alt="Logo tablas de multiplicar" />
+      <h1>Tablas de multiplicar</h1>
+    </header>
+    <main>
+      <div class="contenedor">
+        <form id="form">
+          <label for="tabla" id="texto"
+            >Ingrese la tabla de multiplicar que desea ver</label
+          ><br />
+          <input
+            type="number"
+            name="tabla"
+            id="tabla"
+            placeholder="Escriba un número"
+          /><br />
+          <button type="submit" onclick="ver(event)" id="btnVer">
+            Ver tabla
+          </button>
+        </form>
+        <h2 id="nomTabla"></h2>
+        <div id="tablaMultiplicar"></div>
+        <div id="botones">
+            <button type="button" onclick="volver(event)">Ver otra tabla de multiplicar</button>
+            <button type="button" onclick="salir(event)" id="btnSalir">Salir</button>
+        </div>
+        <div id="message"></div>
+      </div>
+    </main>
+    <footer>
+        <p>&copy; Todos los derechos reservados - 2025</p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
