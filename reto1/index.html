@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de acceso
+    </title>
+    <link rel="icon" href="./assets/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Control de acceso</h1>
+    <section class="acceso">
+        <form class="form">
+            <label for="name">Ingrese su nombre:</label><br>
+            <input type="text" name="name" id="name" class="input" placeholder="Escriba su nombre" required><br>
+            <label for="age">Ingrese su edad:</label><br>
+            <input type="number" name="age" id="age" class="input" placeholder="Escriba su edad" required><br>
+            <p class="parrafo">¿Tiene invitación?</p>
+            <input type="radio" name="isInvited" id="isInvitedYes" class="selector" value="si">
+            <label for="isInvitedYes">Si</label>
+            <input type="radio" name="isInvited" id="isInvitedNo" class="selector" value="no" checked>
+            <label for="isInvitedNo">No</label><br>
+            <button type="button" onclick="datosForm()">Enviar</button>
+        </form>
+        <div id="salida"></div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="../styles.css/style.css">
+</head>
+<body>
+    <h1>Cajero Automático BancoYA</h1>
+    <form id="form">
+        <label for="user">Ingrese su usuario</label>
+        <input type="text" name="user" id="user" placeholder="Escriba su usuario">
+        <label for="pin">Ingrese su PIN</label>
+        <input type="password" name="pin" id="pin" placeholder="Escriba 1234">
+
+        <button type="submit" onclick="ingresar(event)">Ingresar</button>
+    </form>
+    <div id="wait"></div>
+
+    <script src="../script/index.js"></script>
+</body>
+</html>
