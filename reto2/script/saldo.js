@@ -6,6 +6,7 @@ const caja = document.getElementById('retiro');
 const botonVolver = document.getElementById('btnVolver');
 const botonesCaja = document.getElementById('botones2');
 let salidaRetiro = document.getElementById('salida');
+let salidaMensaje = document.getElementById('salida2');
 
 function buttonRetirar(event) {
     event.preventDefault();
@@ -19,7 +20,7 @@ function retirar() {
 
     if (numeroCantidad === 0 || numeroCantidad < 10000) {
         salidaRetiro.textContent = 'Lo sentimos, el valor de su retiro debe ser mayor a $10.000'
-        actualizar ();
+        actualizar();
     }
     else if (numeroCantidad <= saldoDispNum) {
         saldoDispNum -= numeroCantidad;
@@ -28,10 +29,11 @@ function retirar() {
         cantidadRetiro.value = '';
         botonesCaja.style.display = 'block';
         botonVolver.style.display = 'none';
-        actualizar ();
+        salidaMensaje.textContent = 'Gracias por utilizar nuestros servicios.';
+        actualizar();
     } else {
         salidaRetiro.textContent = `Saldo insuficiente, su saldo disponible es $${saldoDispNum}`;
-        actualizar ();
+        actualizar();
     }
 }
 
@@ -45,6 +47,10 @@ function volver() {
 
 function verSaldo() {
     caja.style.display = 'none';
+    botonesCaja.style.display = 'none';
+    botonVolver.style.display = 'block';
+    salidaMensaje.textContent = '';
+    salidaRetiro.textContent = '';
 }
 
 function salir() {

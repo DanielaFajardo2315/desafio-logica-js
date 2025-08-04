@@ -1,0 +1,103 @@
+@import url('https://fonts.cdnfonts.com/css/andrea-canolli-01');
+
+:root {
+    --color-fondo: #c6c6c6;
+    --color-enfasis: #032759;
+    --color-enfasis2: #2b8c1d;
+    --color-textEnfasis: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Andrea Canolli 01', sans-serif;
+    background-color: var(--color-fondo);
+}
+
+/* ------------ HEADER ---------------- */
+header {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--color-enfasis), var(--color-fondo));
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid var(--color-enfasis);
+}
+
+/* --------------- MAIN -------------- */
+.contenedor_main {
+    margin: 220px auto auto auto;
+    height: 250px;
+    width: 60%;
+}
+
+.contenedor_ingreso {
+    background-color: var(--color-enfasis);
+    color: var(--color-textEnfasis);
+    height: 300px;
+    width: 60%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#form>label {
+    margin: 30px;
+}
+
+#form>input {
+    height: 35px;
+    background-color: var(--color-fondo);
+    font-family: 'Andrea Canolli 01', sans-serif;
+    border: 2px solid var(--color-enfasis2);
+    font-size: 20px;
+    width: 60%;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btn_ingresar {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-fondo);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_ingresar:hover {
+    background-color: var(--color-enfasis2);
+    color: var(--color-textEnfasis);
+}
+
+#wait {
+    color: var(--color-textEnfasis);
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 10px;
+}
+
+/* -------------- FOOTER ---------------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-enfasis2);
+    padding-top: 25px;
+}

@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cajero Automático</title>
+    <link rel="icon" href="../assets/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles.css/saldo.css">
 </head>
 <body>
-    <h1>Cajero Automático BancoYA</h1>
-    <h2>Saldo disponible</h2>
-    <div id="saldoDisp"></div>
-    <button type="button" onclick="buttonRetirar(event)">Retirar</button>
-    <button type="button" onclick="salir()">Salir</button>
-
-    <div id="retiro">
-        <label for="cantidad">Ingrese la cantidad a retirar</label>
-        <input type="number" name="cantidad" id="cantidad" placeholder="Ingrese el valor a retirar">
-        <div id="salida"></div>
-        <div class="botones1">
-            <button type="button" onclick="retirar()">Hacer retiro</button>
-            <button type="button" onclick="volver()" id="btnVolver">Volver</button>
+    <header>
+        <img src="../assets/logoBancoYA.png" alt="Logo BancoYA" class="logo">
+        <h1>Cajero Automático BancoYA</h1>
+    </header>
+    <main>
+        <div class="contenedor_main">
+            <h2 class="h2_saldo">Saldo disponible</h2>
+            <div id="saldoDisp"></div>
+            <div class="botones_saldo">
+                <button type="button" onclick="buttonRetirar(event)" class="boton_saldo">Retirar</button>
+                <button type="button" onclick="salir()" class="boton_saldo">Salir</button>
+            </div>
+            <div id="retiro">
+                <label for="cantidad">Ingrese la cantidad a retirar</label>
+                <input type="number" name="cantidad" id="cantidad" placeholder="Ingrese el valor a retirar">
+                <div id="salida"></div>
+                <div class="botones1">
+                    <button type="button" onclick="retirar()" class="boton_retiro">Hacer retiro</button>
+                    <button type="button" onclick="volver()" id="btnVolver" class="boton_retiro">Volver</button>
+                </div>
+                <div id="salida2"></div>
+                <div id="botones2">
+                    <button type="button" onclick="verSaldo()" class="boton_ret2">Ver saldo disponible</button>
+                    <button type="button" onclick="salir()" class="boton_ret2">Salir</button>
+                </div>
+            </div>
         </div>
-        <div id="otroRetiro"></div>
-        <div id="botones2">
-            <button type="button" onclick="verSaldo()">Ver saldo disponible</button>
-            <button type="button" onclick="salir()">Salir</button>
-        </div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy; Todos los derechos reservados BancoYA - 2025</p>
+    </footer>
 
     <script src="../script/saldo.js"></script>
 </body>

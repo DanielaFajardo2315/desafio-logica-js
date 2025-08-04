@@ -1,7 +1,172 @@
+@import url('https://fonts.cdnfonts.com/css/andrea-canolli-01');
+
+:root {
+    --color-fondo: #c6c6c6;
+    --color-enfasis: #032759;
+    --color-enfasis2: #2b8c1d;
+    --color-textEnfasis: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Andrea Canolli 01', sans-serif;
+    background-color: var(--color-fondo);
+}
+
+/* ------------ HEADER ---------------- */
+header {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--color-enfasis), var(--color-fondo));
+}
+
+.logo {
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid var(--color-enfasis);
+}
+
+/* --------------- MAIN -------------- */
+.contenedor_main {
+    margin: 300px auto auto auto;
+    height: 250px;
+    width: 60%;
+}
+
+/* --------------- SALDO DISPONIBLE ------------ */
+.h2_saldo {
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+}
+
+#saldoDisp {
+    font-size: 5rem;
+    text-align: center;
+    background-color: var(--color-enfasis);
+    color: var(--color-textEnfasis);
+    border-radius: 30px;
+    width: 65%;
+    margin: auto;
+}
+
+.botones_saldo {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+
+.boton_saldo {
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-enfasis);
+    color: var(--color-textEnfasis);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton_saldo:hover {
+    background-color: var(--color-enfasis2);
+}
+
+/* --------------- CAJA RETIRO ----------------- */
+
 #retiro {
     display: none;
+    background-color: var(--color-enfasis);
+    position: absolute;
+    height: 280px;
+    width: 40%;
+    top: 280px;
+    left: 30%;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+#retiro>label {
+    font-size: 1.5rem;
+    margin: 10px;
+    color: var(--color-textEnfasis);
+}
+
+#cantidad {
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid var(--color-enfasis2);
+    background-color: var(--color-fondo);
+    margin: 20px;
+    width: 80%;
+    font-family: 'Andrea Canolli 01', sans-serif;
+    font-size: 20px;
+}
+
+#salida, #salida2 {
+    color: var(--color-textEnfasis);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.botones1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+
+.boton_retiro {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-fondo);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.boton_retiro:hover {
+    background-color: var(--color-enfasis2);
+    color: var(--color-textEnfasis);
 }
 
 #botones2 {
     display: none;
+    text-align: center;
+    margin: auto;
+}
+
+.boton_ret2 {
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-fondo);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.boton_ret2:hover {
+    background-color: var(--color-enfasis2);
+    color: var(--color-textEnfasis);
+}
+
+/* -------------- FOOTER ---------------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-enfasis2);
+    padding-top: 25px;
 }
