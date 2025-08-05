@@ -1,8 +1,8 @@
-let userInput = document.getElementById('user');
+const userInput = document.getElementById('user');
 userInput.value = 'Username';
-let login = document.getElementById('form');
-let pinAcceso = document.getElementById('pin');
-let waitMessage = document.getElementById('wait');
+const login = document.getElementById('form');
+const pinAcceso = document.getElementById('pin');
+const waitMessage = document.getElementById('wait');
 
 function ingresar(event) {
 

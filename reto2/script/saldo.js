@@ -1,12 +1,12 @@
-let saldoDisp = document.getElementById('saldoDisp');
+const saldoDisp = document.getElementById('saldoDisp');
 let saldoDispNum = 100000;
 const saldoFormato = '$' + saldoDispNum;
 saldoDisp.textContent = saldoFormato;
 const caja = document.getElementById('retiro');
 const botonVolver = document.getElementById('btnVolver');
 const botonesCaja = document.getElementById('botones2');
-let salidaRetiro = document.getElementById('salida');
-let salidaMensaje = document.getElementById('salida2');
+const salidaRetiro = document.getElementById('salida');
+const salidaMensaje = document.getElementById('salida2');
 
 function buttonRetirar(event) {
     event.preventDefault();

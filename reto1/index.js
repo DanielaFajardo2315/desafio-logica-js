@@ -1,9 +1,8 @@
 function datosForm() {
-    let formulario = document.getElementById('form');
-    let name = document.getElementById('name');
-    let age = document.getElementById('age');
-    let ageInputElement = document.getElementById('age');
-    let isInvited = document.querySelectorAll('input[name="isInvited"');
+    const formulario = document.getElementById('form');
+    const name = document.getElementById('name');
+    const age = document.getElementById('age');
+    const isInvited = document.querySelectorAll('input[name="isInvited"');
     let invitation;
     const message = document.getElementById('salida');
 
@@ -29,6 +28,6 @@ function datosForm() {
         salida.textContent = message;
 
         name.value = '';
-        ageInputElement.value = '';
+        age.value = '';
     }
 }

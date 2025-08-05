@@ -1,11 +1,11 @@
-let texto = document.getElementById('texto');
-let numberTabla = document.getElementById('tabla');
-let verT = document.getElementById('btnVer');
-let nombreTabla = document.getElementById('nomTabla')
-let salida = document.getElementById('tablaMultiplicar');
-let botones = document.getElementById('botones');
-let message = document.getElementById('message');
-let salirB = document.getElementById('btnSalir');
+const texto = document.getElementById('texto');
+const numberTabla = document.getElementById('tabla');
+const verT = document.getElementById('btnVer');
+const nombreTabla = document.getElementById('nomTabla')
+const salida = document.getElementById('tablaMultiplicar');
+const botones = document.getElementById('botones');
+const message = document.getElementById('message');
+const salirB = document.getElementById('btnSalir');
 
 function ver(event) {
     event.preventDefault();
